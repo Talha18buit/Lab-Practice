@@ -1,0 +1,33 @@
+print ("Lab - 01 Programming Exercise")
+print ("Enter 1 for converting Degree Centigrade to Fahrenheit")
+print ("Enter 2 for converting Degree Fahrenheit to Centigrade")
+print ("Enter 3 to calculate the area of rectangle")
+print ("Enter 4 to  calculate the volume of a sphere" )
+print ("Enter 5 that can write your name is upper case, lower case, and title case ")
+press = input("Which program You Want To Run : ")
+if press == '1' :
+    celsius = float(input("Enter Tempurature Celsius : "))
+    fahrenheit = (celsius * 1.8) + 32
+    print("Your Celsius Tempurature", str(celsius) +  " is equal to ",str(fahrenheit) +" fahrenheit")
+elif press == '2' :
+    fahrenheit = float (input("Enter Tempurature Fahrenheit : "))
+    celsius = (fahrenheit - 32 ) / 1.8
+    print("Your Fahrenheit Tempurature ", str(fahrenheit) + " is equal to ", str(celsius) + " Celsius")
+elif press == '3':
+    width = eval(input("Enter The Width Of Rectangle : "))
+    lenght = eval(input("Enter The Lenght Of Rectangle : "))
+    area = (width * lenght)
+    print("Your Entered width is ",str(width)+ " Your Entered lenght is ",str(lenght)+ " Your Area Of a Rectangle is ",(area))
+elif press == '4':
+    from math import pi
+    radius = eval(input("Enter Radius to calculate volume of sphere : "))
+    volume = (4 / 3 * pi * (radius**3 ))
+    print ("Your Given Radius is ",str(radius) + " Your Volume of Sphere is ",str(volume))
+elif press == '5':
+    name = input("Enter Your Name : ")
+    print ("Your Name",name + " in upper case is ",name.upper() + " in lower case is ",name.lower() + " in title case is ",name.title())
+else :
+    print ("Enter The Correct Number To Run The Program 1 2 3 4 5 ")
+
+
+
